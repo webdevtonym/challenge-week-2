@@ -1,30 +1,38 @@
 :root {
   /* Add universal fonts, colours ect here */
-  --main-theme-color: #0096ff;
+  --main-theme-color: black;
 }
+
+
 
 body {
   margin: 0;
+  padding: 0;
+  /* width: auto; */
 }
+
+/* Media queries */
 
 /* Grid container section */
 
 .container {
   display: grid;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-family: "Quicksand", sans-serif;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 75px 200px 1fr 100px;
   grid-template-areas:
-    "head nav nav"
-    "hero hero hero"
-    "info info info"
-    "footer footer footer";
+    "head nav nav nav"
+    "hero hero hero hero"
+    "info info info info"
+    "footer footer footer footer";
   /* gap: 10px; */
-  padding: 10px;
   box-sizing: border-box;
-  width: 100vw;
-  height: max-content;
+  width: auto;
+  height: 100%;
+  /* background-image: url(/images/compare-fibre-INNsF0Zz_kQ-unsplash.jpg); */
+
+  
 }
 
 .container div {
@@ -33,7 +41,7 @@ body {
 
 /* Header section */
 .header {
-  background-color: #000000;
+  background-color: var(--main-theme-color);
   color: #ffffff;
   /* height: 50px; */
   /* Should i put flexbox here to move the text around? */
@@ -57,7 +65,8 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #000000;
+  background-color: var(--main-theme-color);
+ 
 }
 
 .nav a {
@@ -72,55 +81,73 @@ body {
 
 /* Hero section */
 .content-hero {
-  background-image: url(/images/code-img.jpg);
   grid-area: hero;
-  height: 80%;
+  height: 70%;
+  width: 100vw;
+  /* border: solid 4px yellow; */
+  /* margin: 0; */
+  padding: 590px;
+  /* background-image: url(/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg); */
 }
 
+.hero-image {
+ object-fit: contain;
+ width: 100%;
+ height: 100%;
+}
+
+
+
 .content-hero h2 {
-  background-color: #ffffff;
+  color: #ffffff;
   width: max-content;
   padding: 20px;
   margin: 80px 5px 10px 900px;
+  background-color: rgba(0,0,0,0.7);
+
 }
 
 /* Main content area */
 .info-content-container {
   grid-area: info;
-  height: 100%;
   /* width: 100%; */
   border: 1px solid blue;
   display: flex;
   flex-direction: column;
-
 }
 
 .links {
   display: flex;
   flex-wrap: nowrap;
-
+  align-items: center;
+  justify-content: center;
 }
 
 .links h1 {
-    width: 100px;
-    padding-right: 100px;
-  
- 
+  width: 100px;
+  height: 50px;
+  padding-right: 90px;
+  border-right: 2px solid #000000;
+
   /* text-decoration: underline; */
 }
 
 .links p {
-    
+  width: 800px;
+  padding-left: 35px;
 }
-
-
-
-
 
 /* Footer section */
 .footer {
   grid-area: footer;
+  display: flex;
+  height: 200px;
   border: 2px solid pink;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-theme-color);
+
 }
 
 /* Nav section
