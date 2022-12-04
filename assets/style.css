@@ -3,8 +3,6 @@
   --main-theme-color: black;
 }
 
-
-
 body {
   margin: 0;
   padding: 0;
@@ -13,9 +11,8 @@ body {
 
 /* Media queries */
 
-/* Grid container section */
-
-.container {
+/* Grid portfolio container section */
+.portfolio-container {
   display: grid;
   /* border: 1px solid red; */
   font-family: "Quicksand", sans-serif;
@@ -31,8 +28,6 @@ body {
   width: auto;
   height: 100%;
   /* background-image: url(/images/compare-fibre-INNsF0Zz_kQ-unsplash.jpg); */
-
-  
 }
 
 .container div {
@@ -43,30 +38,31 @@ body {
 .header {
   background-color: var(--main-theme-color);
   color: #ffffff;
-  /* height: 50px; */
-  /* Should i put flexbox here to move the text around? */
-  /* margin-left: 7px; */
   display: flex;
   grid-area: head;
 }
 
 .header h1 {
   display: flex;
-  /* flex-direction: row; */
   align-items: center;
   justify-content: center;
   padding-left: 20px;
 }
 
+.header img {
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    padding-left: 3%;
+}
+
 /* Nav section */
 .nav {
-  /* height: 50px; */
   grid-area: nav;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   background-color: var(--main-theme-color);
- 
 }
 
 .nav a {
@@ -82,60 +78,59 @@ body {
 /* Hero section */
 .content-hero {
   grid-area: hero;
-  height: 70%;
-  width: 100vw;
-  /* border: solid 4px yellow; */
-  /* margin: 0; */
-  padding: 590px;
-  /* background-image: url(/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg); */
+  background-image: url(/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-
-.hero-image {
- object-fit: contain;
- width: 100%;
- height: 100%;
-}
-
-
 
 .content-hero h2 {
   color: #ffffff;
   width: max-content;
   padding: 20px;
   margin: 80px 5px 10px 900px;
-  background-color: rgba(0,0,0,0.7);
-
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Main content area */
 .info-content-container {
+  border: 2px solid orange;
+  line-height: 5;
   grid-area: info;
-  /* width: 100%; */
-  border: 1px solid blue;
-  display: flex;
-  flex-direction: column;
+  margin: 0px 5%;
+  display: grid;
+  /* grid-template-rows: 2fr 1fr 1fr 1fr; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+ 
+ 
 }
 
-.links {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
+.p1 {  
+    
+    grid-column-start: 2;
+    grid-column-end: 5;
 }
+  
 
-.links h1 {
+
+
+
+
+
+
+
+
+/* .links h1 {
   width: 100px;
   height: 50px;
   padding-right: 90px;
-  border-right: 2px solid #000000;
+  /* border-right: 2px solid #000000; */
+  /* text-decoration: underline;
+} */ 
 
-  /* text-decoration: underline; */
-}
-
-.links p {
+/* .links p {
   width: 800px;
   padding-left: 35px;
-}
+} */
 
 /* Footer section */
 .footer {
@@ -147,34 +142,4 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--main-theme-color);
-
 }
-
-/* Nav section
-nav {
-    display: flex;
-    text-decoration: none;
-    border: 1px solid black;
-    justify-content: space-between;
-    background-color: var(--main-theme-color);
-}
-nav h1 {
-    padding-left: 15px;
-}
-
-
-nav .links {
-    justify-content: flex-end;  
-    border: 1px solid black;  
-}
-
-.links a {
-   
-    text-align: center;
-    list-style: none;
-    padding: 14px 15px;
-    border: 1px solid black;
-
-} */
-
-/* Hero section */
