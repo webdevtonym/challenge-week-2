@@ -9,13 +9,9 @@ body {
   /* width: auto; */
 }
 
-/* Media queries */
-
 /* Grid portfolio container section */
 .portfolio-container {
   display: grid;
-  /* border: 1px solid red; */
-  /* margin: 0 auto; */
   font-family: "Quicksand", sans-serif;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 1fr;
@@ -55,10 +51,10 @@ header h1 {
 }
 
 header img {
-    height: 50px;
-    width: 50px;
-    align-self: center;
-    padding-left: 10%;
+  height: 50px;
+  width: 50px;
+  align-self: center;
+  padding-left: 10%;
 }
 
 /* Nav section */
@@ -99,122 +95,124 @@ nav a:hover {
 /* Main content area */
 
 /* .info-content-container { */
-  /* padding-top: 5%; */
-  /* border: 2px solid orange; */
-  /* line-height: 1; */
-  /* grid-area: info; */
-  /* margin: 0px 20%; */
-  /* display: grid; */
+/* padding-top: 5%; */
+/* border: 2px solid orange; */
+/* line-height: 1; */
+/* grid-area: info; */
+/* margin: 0px 20%; */
+/* display: grid; */
 /* } */
 
 /* aside {
     /* grid-area: a; */
-    /* line-height: 10; */
-    /* padding-left: 20%;
+/* line-height: 10; */
+/* padding-left: 20%;
     border-right: 2px solid black;
 } */
 
-#a1, #a2, #a3, #a4 {
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+#a1,
+#a2,
+#a3,
+#a4 {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 #a1 {
-    grid-area: a1;
+  grid-area: a1;
 }
 
 #a2 {
-    grid-area: a2;
+  grid-area: a2;
 }
 
 #a3 {
-    grid-area: a3;
+  grid-area: a3;
 }
 
 #a4 {
-    grid-area: a4;
+  grid-area: a4;
 }
 
 .paragraph1 {
-    grid-area: p1;
+  grid-area: p1;
 }
 
-.paragraph1, .work1, .contact, .resume, p, a{
-padding: 10px 30px 10px 10px;
-display: flex;
-align-items: center;
-justify-content: flex-start;
-
+.paragraph1,
+.work1,
+.contact,
+.resume,
+p,
+a {
+  padding: 10px 30px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 /* Images area */
 
 .work-img-1 {
-    grid-area: wi1;
-    background-image: url(/images/02-portfolio-4.jpg);  
-    background-repeat: no-repeat;
-    background-size: 100%;
-    max-height: 525px;
-    width: 85%;
-    border: 4px blue solid;
+  grid-area: wi1;
+  background-image: url(/images/02-portfolio-4.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-height: 525px;
+  width: 85%;
+  border: 4px blue solid;
 }
 
 .work-img-1:hover {
-    opacity: 0.5;
-    cursor: grab;
-
+  opacity: 0.5;
+  cursor: grab;
 }
 
 .work-img-1 h1 {
-    background-color: #ffd900c7;
-    display: inline-block;
-    padding: 25px;
-    margin-top: 50%;
+  background-color: #ffd900c7;
+  display: inline-block;
+  padding: 25px;
+  margin-top: 50%;
 }
 
 .work-img-2 {
-    grid-area: wi2;
-    background-image: url(/images/02-portfolio-2.jpg);  
-    background-repeat: no-repeat;
-    background-size: 100%;
-    max-height: 200px;
-    width: 42.5%;
-    border: 4px blue solid;
-
+  grid-area: wi2;
+  background-image: url(/images/02-portfolio-2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-height: 200px;
+  width: 42.5%;
+  border: 4px blue solid;
 }
 
 .work-img-2 h1 {
-    background-color: #ffd900c7;
-    display: inline-block;
-    padding: 25px;
-    margin-top: 27.5%;
+  background-color: #ffd900c7;
+  display: inline-block;
+  padding: 25px;
+  margin-top: 27.5%;
 }
 
 .work-img-2:hover {
-   opacity: 0.5;
-   cursor: grab;
+  opacity: 0.5;
+  cursor: grab;
 }
 
-
-
 .contact {
-    grid-area: cm;
+  grid-area: cm;
 }
 
 .contact a {
-    color: #000000;
+  color: #000000;
 }
 
 .resume {
-    grid-area: r;
+  grid-area: r;
 }
 
 .resume a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 /* Footer */
 footer {
@@ -225,4 +223,125 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: var(--main-theme-color);
+}
+
+/* Media queries */
+
+/* For Desktop*/
+@media screen and (min-width: 1024x) {
+}
+
+/* For Tablets*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* For Smartphones */
+@media screen and (max-width: 414px) {
+  /* Grid portfolio container section */
+
+  .portfolio-container {
+    display: grid;
+    border: 1px solid red;
+    margin: 0 auto;
+    font-family: "Quicksand", sans-serif;
+    grid-template-columns: 2;
+    grid-template-rows: 414px;
+    grid-template-areas:
+      "head"
+      "nav"
+      "hero"
+      "a1"
+      "p1"
+      "p1"
+      "p1"
+      "a2"
+      "wi1"
+      "wi1"
+      "wi1"
+      "a2"
+      "a2"
+      "wi2"
+      "wi2"
+      "wi2"
+      "a3"
+      "cm"
+      "cm"
+      "cm"
+      "a4"
+      "r"
+      "r"
+      "r"
+      "footer";
+
+    width: auto;
+    height: 100%;
+  }
+
+  /* Header section */
+
+  header {
+    background-color: var(--main-theme-color);
+    color: #ffffff;
+    display: flex;
+    grid-area: head;
+  }
+  header h1 {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    color: pink;
+  }
+
+  header img {
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    padding-left: 10%;
+  }
+
+  nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--main-theme-color);
+    font-size: 0.7rem;
+  }
+
+  /* Nav section */
+  nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--main-theme-color);
+  }
+
+  nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Hero section */
+  .content-hero {
+    grid-area: hero;
+    background-image: url(/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .content-hero h2 {
+    color: #ffffff;
+    width: max-content;
+    padding: 20px;
+    margin: 80px 5px 10px 900px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }
