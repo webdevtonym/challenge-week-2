@@ -29,14 +29,10 @@ body {
     "a2 wi2 wi2 wi2"
     "a3 cm cm cm"
     "a4 r r r"
-    "footer footer footer footer"
-    ;
-    
-  /* row-gap: 5px; */
- 
+    "footer footer footer footer";
+
   width: auto;
   height: 100%;
-  /* background-image: url(/images/compare-fibre-INNsF0Zz_kQ-unsplash.jpg); */
 }
 
 .container div {
@@ -62,7 +58,7 @@ header img {
     height: 50px;
     width: 50px;
     align-self: center;
-    padding-left: 3%;
+    padding-left: 10%;
 }
 
 /* Nav section */
@@ -118,26 +114,26 @@ nav a:hover {
     border-right: 2px solid black;
 } */
 
-.a1, .a2, .a3, .a4 {
+#a1, #a2, #a3, #a4 {
     padding: 50px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.a1 {
+#a1 {
     grid-area: a1;
 }
 
-.a2 {
+#a2 {
     grid-area: a2;
 }
 
-.a3 {
+#a3 {
     grid-area: a3;
 }
 
-.a4 {
+#a4 {
     grid-area: a4;
 }
 
@@ -163,6 +159,11 @@ justify-content: flex-start;
     max-height: 525px;
     width: 85%;
     border: 4px blue solid;
+}
+
+.work-img-1:hover {
+    opacity: 0.5;
+    cursor: grab;
 
 }
 
@@ -190,6 +191,14 @@ justify-content: flex-start;
     padding: 25px;
     margin-top: 27.5%;
 }
+
+.work-img-2:hover {
+   opacity: 0.5;
+   cursor: grab;
+}
+
+
+
 .contact {
     grid-area: cm;
 }
@@ -211,7 +220,7 @@ justify-content: flex-start;
 footer {
   grid-area: footer;
   display: flex;
-  height: 200px;
+  height: 300px;
   color: #ffffff;
   justify-content: center;
   align-items: center;
