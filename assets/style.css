@@ -15,20 +15,25 @@ body {
 .portfolio-container {
   display: grid;
   /* border: 1px solid red; */
+  /* margin: 0 auto; */
   font-family: "Quicksand", sans-serif;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 75px 200px 1fr 1fr 1fr 1fr 100px;
+  grid-auto-rows: 1fr;
+  grid-template-rows: 75px 200px 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "head nav nav nav"
     "hero hero hero hero"
-    "a p1 p1 p1"
-    "a wi1 wi1 wi1"
-    "a wi1 wi1 wi1"
-    "a cm cm cm"
-    "a r r r"
-    "footer footer footer footer";
-  /* gap: 50px; */
-  box-sizing: border-box;
+    "a1 p1 p1 p1"
+    "a2 wi1 wi1 wi1"
+    "a2 wi1 wi1 wi1"
+    "a2 wi2 wi2 wi2"
+    "a3 cm cm cm"
+    "a4 r r r"
+    "footer footer footer footer"
+    ;
+    
+  /* row-gap: 5px; */
+ 
   width: auto;
   height: 100%;
   /* background-image: url(/images/compare-fibre-INNsF0Zz_kQ-unsplash.jpg); */
@@ -106,55 +111,100 @@ nav a:hover {
   /* display: grid; */
 /* } */
 
-aside {
-    grid-area: a;
-    line-height: 5;
-    padding-left: 50%;
+/* aside {
+    /* grid-area: a; */
+    /* line-height: 10; */
+    /* padding-left: 20%;
     border-right: 2px solid black;
+} */
+
+.a1, .a2, .a3, .a4 {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.a1 {
+    grid-area: a1;
+}
+
+.a2 {
+    grid-area: a2;
+}
+
+.a3 {
+    grid-area: a3;
+}
+
+.a4 {
+    grid-area: a4;
 }
 
 .paragraph1 {
     grid-area: p1;
 }
 
-.work1-img {
+.paragraph1, .work1, .contact, .resume, p, a{
+padding: 10px 30px 10px 10px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+
+}
+
+/* Images area */
+
+.work-img-1 {
     grid-area: wi1;
-    background-image: url(/images/compare-fibre-INNsF0Zz_kQ-unsplash.jpg);
+    background-image: url(/images/02-portfolio-4.jpg);  
     background-repeat: no-repeat;
     background-size: 100%;
-    object-fit: cover;
-    max-height: 100%;
-    width: 100%;
-
+    max-height: 525px;
+    width: 85%;
+    border: 4px blue solid;
 
 }
 
-.info-content-container > div {
-    padding-left: 2%;
+.work-img-1 h1 {
+    background-color: #ffd900c7;
+    display: inline-block;
+    padding: 25px;
+    margin-top: 50%;
 }
 
-.info-content-container h1 {
-    text-decoration: underline;
+.work-img-2 {
+    grid-area: wi2;
+    background-image: url(/images/02-portfolio-2.jpg);  
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-height: 200px;
+    width: 42.5%;
+    border: 4px blue solid;
+
 }
 
-.work-container  > h1, img{
-    display: flex;
+.work-img-2 h1 {
+    background-color: #ffd900c7;
+    display: inline-block;
+    padding: 25px;
+    margin-top: 27.5%;
+}
+.contact {
+    grid-area: cm;
 }
 
-.info-content-container img {
-
-    width: 100%;
-    content: fill;
-    justify-content: center;
-    
+.contact a {
+    color: #000000;
 }
 
+.resume {
+    grid-area: r;
+}
 
-
-
-
-
-  
+.resume a {
+    text-decoration: none;
+}
 
 
 /* Footer */
