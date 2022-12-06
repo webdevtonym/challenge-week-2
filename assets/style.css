@@ -6,7 +6,6 @@
 body {
   margin: 0;
   padding: 0;
-  /* width: auto; */
 }
 
 /* Grid portfolio container section */
@@ -29,7 +28,6 @@ body {
 
   width: auto;
   overflow: hidden;
-  /* height: 100%; */
 }
 
 .container div {
@@ -102,7 +100,6 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  /* border-right: #000000 solid 2px; */
 }
 
 #a1 {
@@ -140,15 +137,13 @@ a {
 
 /* Images area */
 
-
-    /* Challenge 1 */
+/* Challenge 1 */
 .work-img-1 {
   grid-area: wi1;
   background-image: url(/images/02-portfolio-4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment:local;
   max-height: 525px;
   width: 85%;
   border: 4px blue solid;
@@ -168,20 +163,19 @@ a {
 }
 
 .work-img-1 a {
-    padding-top: 375px;
-    text-decoration: none;
-    font-weight: bold;
-    opacity: 0;
-  }
+  padding-top: 375px;
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 0;
+}
 
-    /* Calculator */
+/* Calculator */
 .work-img-2 {
   grid-area: wi2;
   background-image: url(/images/02-portfolio-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: local;
   max-height: 200px;
   width: 42.5%;
   border: 4px blue solid;
@@ -201,23 +195,23 @@ a {
 
 /* Project 3 */
 
-  .work-img-3 {
-    grid-area: wi3;
-    background-image: url(/images/02-portfolio-3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    max-height: 200px;
-    width: 42.5%;
-    border: 4px blue solid;
-  }
+.work-img-3 {
+  grid-area: wi3;
+  background-image: url(/images/02-portfolio-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-height: 200px;
+  width: 42.5%;
+  border: 4px blue solid;
+}
 
-  .work-img-3 h1 {
-    background-color: #ffd900c7;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 50%;
-  }
+.work-img-3 h1 {
+  background-color: #ffd900c7;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 50%;
+}
 
 .contact {
   grid-area: cm;
@@ -233,6 +227,9 @@ a {
 
 .resume a {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Footer */
@@ -247,10 +244,6 @@ footer {
 }
 
 /* Media queries */
-
-/* For Tablets*/
-/* @media screen and (min-width: 768px) and (max-width: 1023px) {
-} */
 
 /* For Smartphones */
 @media screen and (max-width: 414px) {
@@ -281,7 +274,6 @@ footer {
   /* Header section */
   header {
     background-color: var(--main-theme-color);
-    /* color: #ffffff; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -290,7 +282,6 @@ footer {
   }
 
   header h1 {
-    /* border: 2px red solid; */
     padding-top: 15px;
   }
 
@@ -314,7 +305,6 @@ footer {
 
   nav a {
     text-decoration: none;
-    /* padding: 10px; */
     color: #ffffff;
   }
 
@@ -367,7 +357,6 @@ footer {
     grid-area: p1-m;
     display: flex;
     padding-left: 30px;
-    /* line-height: 2.5; */
   }
 
   .work1,
@@ -375,7 +364,6 @@ footer {
   .resume,
   p,
   a {
-    /* padding: 10px 30px 10px 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -484,7 +472,6 @@ footer {
   }
 
   @media screen and (min-width: 1080px) and (max-width: 2000px) {
-
     .portfolio-container {
       display: grid;
       font-family: "Quicksand", sans-serif;
@@ -503,7 +490,6 @@ footer {
 
       width: auto;
       overflow: hidden;
-      /* height: 100%; */
     }
 
     .container div {
@@ -614,13 +600,13 @@ footer {
 
     /* Images area */
 
-
     /* Challenge 1 - surf report */
     .work-img-1 {
       grid-area: wi1;
       background-image: url(/images/02-portfolio-4.jpg);
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center center;
       max-height: 700px;
       width: 85%;
       border: 4px blue solid;
@@ -644,7 +630,8 @@ footer {
       grid-area: wi2;
       background-image: url(/images/02-portfolio-2.jpg);
       background-repeat: no-repeat;
-      background-size: cover%;
+      background-size: cover;
+      background-position: center center;
       max-height: 200px;
       width: 42.5%;
       border: 4px blue solid;
