@@ -79,7 +79,7 @@ nav a:hover {
 /* Hero section */
 .content-hero {
   grid-area: hero;
-  background-image: url(challengito-week-2/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+  background-image: url(./images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -404,7 +404,7 @@ footer {
 
   .work-img-2 {
     grid-area: wi2-m;
-    background-image: url(./images/02-portfolio-2.jpg);
+    background-image: url(/images/02-portfolio-2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     max-height: 550px;
@@ -426,7 +426,7 @@ footer {
 
   .work-img-3 {
     grid-area: wi3-m;
-    background-image: url(./images/02-portfolio-3.jpg);
+    background-image: url(/images/02-portfolio-3.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     max-height: 550px;
@@ -541,7 +541,7 @@ footer {
     /* Hero section */
     .content-hero {
       grid-area: hero;
-      background-image: url(./images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+      background-image: url(/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
       background-repeat: no-repeat;
       background-size: 100%;
     }
@@ -603,7 +603,7 @@ footer {
     /* Challenge 1 - surf report */
     .work-img-1 {
       grid-area: wi1;
-      background-image: url(./images/02-portfolio-4.jpg);
+      background-image: url(/images/02-portfolio-4.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -628,7 +628,7 @@ footer {
 
     .work-img-2 {
       grid-area: wi2;
-      background-image: url(./images/02-portfolio-2.jpg);
+      background-image: url(/images/02-portfolio-2.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
