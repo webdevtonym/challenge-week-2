@@ -146,7 +146,9 @@ a {
   grid-area: wi1;
   background-image: url(/images/02-portfolio-4.jpg);
   background-repeat: no-repeat;
-  background-size: 175%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment:local;
   max-height: 525px;
   width: 85%;
   border: 4px blue solid;
@@ -177,7 +179,9 @@ a {
   grid-area: wi2;
   background-image: url(/images/02-portfolio-2.jpg);
   background-repeat: no-repeat;
-  background-size: 125%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: local;
   max-height: 200px;
   width: 42.5%;
   border: 4px blue solid;
@@ -201,7 +205,8 @@ a {
     grid-area: wi3;
     background-image: url(/images/02-portfolio-3.jpg);
     background-repeat: no-repeat;
-    background-size: 120%;
+    background-size: cover;
+    background-position: center center;
     max-height: 200px;
     width: 42.5%;
     border: 4px blue solid;
@@ -478,7 +483,7 @@ footer {
     position: sticky;
   }
 
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 1080px) and (max-width: 2000px) {
 
     .portfolio-container {
       display: grid;
@@ -615,7 +620,7 @@ footer {
       grid-area: wi1;
       background-image: url(/images/02-portfolio-4.jpg);
       background-repeat: no-repeat;
-      background-size: 5000px;
+      background-size: cover;
       max-height: 700px;
       width: 85%;
       border: 4px blue solid;
@@ -639,7 +644,7 @@ footer {
       grid-area: wi2;
       background-image: url(/images/02-portfolio-2.jpg);
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-size: cover%;
       max-height: 200px;
       width: 42.5%;
       border: 4px blue solid;
