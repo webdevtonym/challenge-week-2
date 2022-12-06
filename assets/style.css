@@ -79,7 +79,7 @@ nav a:hover {
 /* Hero section */
 .content-hero {
   grid-area: hero;
-  background-image: url(./images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+  background-image: url(challengito-week-2/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
