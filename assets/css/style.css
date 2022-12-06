@@ -541,7 +541,7 @@ footer {
     /* Hero section */
     .content-hero {
       grid-area: hero;
-      background-image: url(./assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+      background-image: url(/assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
       background-repeat: no-repeat;
       background-size: 100%;
     }
@@ -603,7 +603,7 @@ footer {
     /* Challenge 1 - surf report */
     .work-img-1 {
       grid-area: wi1;
-      background-image: url(./assets/images/02-portfolio-4.jpg);
+      background-image: url(/assets/images/02-portfolio-4.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
