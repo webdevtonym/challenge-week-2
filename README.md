@@ -9,7 +9,7 @@
     - This is only to be used by me for studying purposes.
     - A mock-up screenshot of the finished website is provided below.
 
-    ![challengito-demo](/assets/images/My-Portfolio.png)
+    ![challengito-demo](challengito-week-2/assets/images/My-Portfolio.png)
 
     Link to application: https://webdevtonym.github.io/challengito-week-2/
 
