@@ -9,7 +9,7 @@
     - This is only to be used by me for studying purposes.
     - A mock-up screenshot of the finished website is provided below.
 
-    ![portfolio-site](../assets/images/My-Portfolio.png)
+    ![portfolio-site](assets/images/My-Portfolio.png)
 
     Link to application: https://webdevtonym.github.io/portfolio-site/
 
