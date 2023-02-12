@@ -1,4 +1,4 @@
-# Portfolio website - Module 2 Challenge
+# Portfolio website
 
 ## Description
 
