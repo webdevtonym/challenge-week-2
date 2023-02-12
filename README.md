@@ -2,7 +2,7 @@
 
 ## Description
 
-    - This is my portfolio project completed as part of our week 2 challenge. It includes nav bar, hero image, a link to a project with other project images, contact me information, a resume placeholder link and footer.
+    - This is my portfolio project created using HTML and CSS. It includes nav bar, hero image, a link to a project with other project images, contact me information, a resume placeholder link and footer.
 
 ## Usage
 
